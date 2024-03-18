@@ -1,0 +1,14 @@
+.notification {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.notification.success {
+  background-color: lightblue;
+  border: solid 2px blue;
+}
+
+.notification.error {
+  background-color: lightcoral;
+  border: solid 2px red;
+}
