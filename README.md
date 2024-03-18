@@ -16,28 +16,28 @@ Desarrollo de una aplicación web similar a Wallapop.
 
 ### Listado de anuncios
 
-- [ ] Cada anuncio deberá mostrar:
-  - [ ] **Imagen** (si tiene)
-  - [ ] **Nombre**
-  - [ ] **Descripción**
-  - [ ] **Precio**
-  - [ ] Si es **compra** o **venta**
+- [x] Cada anuncio deberá mostrar:
+  - [x] **Imagen** (si tiene)
+  - [x] **Nombre**
+  - [x] **Descripción**
+  - [x] **Precio**
+  - [x] Si es **compra** o **venta**
 - [ ] La pantalla de listado de los anuncios deberá **gestionar todos los estados de la interfaz**:
   - [ ] **Vacío** (no hay anuncios)
   - [ ] **Error** (cuando se produce un error al cargar los anuncios)
   - [ ] **Carga** (mientras se cargan los anuncios desde el backend)
   - [ ] **Éxito** (cuando se han recuperado los anuncios y están listos para ser mostrados)
-- [ ] Al pulsar sobre un anuncio iremos a la [pantalla detalle del anuncio](#pantalla-detalle-del-anuncio)
+- [x] Al pulsar sobre un anuncio iremos a la [pantalla detalle del anuncio](#pantalla-detalle-del-anuncio)
 - [ ] **Si el usuario está logado**, hay que mostrarle un botón que le permita ecceder a la pantalla de [creación de un anuncio](#página-de-creación-de-anuncio)
 
 ### Pantalla detalle del anuncio
 
-- [ ] Deberá mostrar:
-  - [ ] **Imagen** (si tiene)
-  - [ ] **Nombre**
-  - [ ] **Descripción**
-  - [ ] **Precio**
-  - [ ] Si es **compra** o **venta**
+- [x] Deberá mostrar:
+  - [x] **Imagen** (si tiene)
+  - [x] **Nombre**
+  - [x] **Descripción**
+  - [x] **Precio**
+  - [x] Si es **compra** o **venta**
 - [ ] Deberá **gestionar correctamente todos los estados de la interfaz**:
   - [ ] **Vacío** (no existe el anuncio)
   - [ ] **Error** (cuando se produce un error al cargar la info del anuncio)
@@ -75,10 +75,10 @@ Desarrollo de una aplicación web similar a Wallapop.
 
 ### Registro
 
-- [ ] Deberá mostrar un **formulario** solicitando al usuario:
-  - [ ] **Nombre de usuario**
-  - [ ] **Contraseña**
-- [ ] Cuando el usuario envíe el formulario, deberá **registrar el usuario en el backend**
+- [x] Deberá mostrar un **formulario** solicitando al usuario:
+  - [x] **Nombre de usuario**
+  - [x] **Contraseña**
+- [x] Cuando el usuario envíe el formulario, deberá **registrar el usuario en el backend**
 - [ ] Debemos **gestionar todos los estados de interfaz correctamente**:
   - [ ] **Error**
   - [ ] **Carga**

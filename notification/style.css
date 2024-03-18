@@ -3,12 +3,20 @@
   border-radius: 1rem;
 }
 
+.notification + .notification {
+  margin-top: 1rem;
+}
+
 .notification.success {
-  background-color: lightblue;
-  border: solid 2px blue;
+  border: 2px solid CornflowerBlue;
+  color: CornflowerBlue;
+  background-color: #d8e5f6;
+  font-weight: 600;
 }
 
 .notification.error {
-  background-color: lightcoral;
-  border: solid 2px red;
+  border: 2px solid lightcoral;
+  color: lightcoral;
+  background-color: #ffe7e7;
+  font-weight: 600;
 }
