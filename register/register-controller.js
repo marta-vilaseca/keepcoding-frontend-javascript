@@ -3,7 +3,7 @@ import { dispatchEvent } from "../utils/dispatchEvent.js";
 import { createUser } from "./register-model.js";
 
 export function registerController(registerForm) {
-  const spinner = registerForm.querySelector("#spinner");
+  const spinner = registerForm.querySelector("#loader");
   const { showLoader, hideLoader } = loaderController(spinner);
 
   registerForm.addEventListener("submit", (event) => {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro</title>
+    <title>JSPop - Registro</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="notification/style.css" />
   </head>
@@ -17,18 +17,18 @@
         <h2>Registro de nuevo usuario</h2>
         <section id="notifications" class="notification-list"></section>
         <form id="register-form">
-          <section id="spinner"></section>
+          <section id="loader"></section>
           <p>
             <label class="form__label" for="email">Email <span>*</span></label>
-            <input class="form__inputfield" type="text" id="email" required />
+            <input class="form__inputfield" type="email" id="email" name="email" required />
           </p>
           <p>
             <label class="form__label" for="password">Password <span>*</span></label>
-            <input class="form__inputfield" type="password" id="password" required minlength="8" />
+            <input class="form__inputfield" type="password" id="password" name="password" required minlength="8" />
           </p>
           <p>
             <label class="form__label" for="password-confirm">Confirmar password <span>*</span></label>
-            <input class="form__inputfield" type="password" id="password-confirm" required minlength="8" />
+            <input class="form__inputfield" type="password" id="password-confirm" name="password-confirm" required minlength="8" />
           </p>
           <button class="form__button" type="submit">Crear usuario</button>
           <p class="form__footnote"><span>*</span> campos obligatorios</p>

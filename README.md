@@ -64,10 +64,10 @@ Desarrollo de una aplicación web similar a Wallapop.
 
 ### Login
 
-- [ ] Deberá mostrar un **formulario** solicitando al usuario:
-  - [ ] **Nombre de usuario**
-  - [ ] **Contraseña**
-- [ ] Cuando el usuario envíe el formulario, deberá autenticar el usuario contra el backend para obtener un **token JWT** (que utilizaremos en las siguientes comunicaciones con el backend para autenticar al usuario)
+- [x] Deberá mostrar un **formulario** solicitando al usuario:
+  - [x] **Nombre de usuario**
+  - [x] **Contraseña**
+- [x] Cuando el usuario envíe el formulario, deberá autenticar el usuario contra el backend para obtener un **token JWT** (que utilizaremos en las siguientes comunicaciones con el backend para autenticar al usuario)
 - [ ] Debemos **gestionar todos los estados de interfaz correctamente**:
   - [ ] **Error**
   - [ ] **Carga**

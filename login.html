@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSPop - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="notification/style.css" />
+  </head>
+  <body class="form__page">
+    <header>
+      <h1><a href="/">JSpop</a></h1>
+      <nav id="session"></nav>
+    </header>
+    <main>
+      <section class="formulario">
+        <h2>Usuarios Registrados: Log In</h2>
+        <section id="notifications" class="notification-list"></section>
+        <form id="login-form">
+          <section id="loader"></section>
+          <p>
+            <label class="form__label" for="email">Email <span>*</span></label>
+            <input class="form__inputfield" type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label class="form__label" for="password">Password <span>*</span></label>
+            <input class="form__inputfield" type="password" id="password" name="password" required minlength="8" />
+          </p>
+          <button class="form__button" type="submit">Entrar</button>
+          <p class="form__footnote"><span>*</span> campos obligatorios</p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
