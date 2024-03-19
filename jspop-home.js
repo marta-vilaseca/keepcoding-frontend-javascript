@@ -1,12 +1,12 @@
 import { notificationController } from "./notification/notification-controller.js";
 import { adsListController } from "./ad-list/ads-controller.js";
-// import { sessionController } from "./session/session-controller.js";
+import { sessionController } from "./session/session-controller.js";
 
 const notificationList = document.querySelector(".notification-list");
 const adsList = document.querySelector(".productos");
-// const session = document.querySelector('#session');
+const session = document.querySelector("#session");
 
-// sessionController(session);
+sessionController(session);
 const { showNotification } = notificationController(notificationList);
 
 adsList.addEventListener("error-loading-ads", (event) => {

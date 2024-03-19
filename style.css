@@ -109,6 +109,42 @@ h2 {
   display: none;
 }
 
+/* NAVEGACIÓN
+----------------------------------- */
+nav {
+  margin: 2rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+nav button,
+nav a:link,
+nav a:visited {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: MediumAquamarine;
+  color: white;
+  text-decoration: none;
+  border: 0;
+  border-radius: 1rem;
+}
+
+nav button:hover,
+nav a:hover,
+nav a:active {
+  background-color: teal;
+  cursor: pointer;
+}
+
 /* PRODUCTOS
 --------------------------- */
 
@@ -271,6 +307,8 @@ p.mensaje-no-hay {
 /* FORMULARIOS
 ----------------------------------- */
 body.form__page {
+  background-color: #bbb;
+
   &::before {
     content: "";
     position: absolute;

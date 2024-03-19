@@ -10,7 +10,6 @@
   <body class="form__page">
     <header>
       <h1><a href="/">JSpop</a></h1>
-      <nav id="session"></nav>
     </header>
     <main>
       <section class="formulario">
@@ -19,15 +18,14 @@
         <form id="login-form">
           <section id="loader"></section>
           <p>
-            <label class="form__label" for="email">Email <span>*</span></label>
+            <label class="form__label" for="email">Email</label>
             <input class="form__inputfield" type="email" id="email" name="email" required />
           </p>
           <p>
-            <label class="form__label" for="password">Password <span>*</span></label>
+            <label class="form__label" for="password">Password</label>
             <input class="form__inputfield" type="password" id="password" name="password" required minlength="8" />
           </p>
           <button class="form__button" type="submit">Entrar</button>
-          <p class="form__footnote"><span>*</span> campos obligatorios</p>
         </form>
       </section>
     </main>

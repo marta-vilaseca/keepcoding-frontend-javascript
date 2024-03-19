@@ -28,7 +28,7 @@ Desarrollo de una aplicación web similar a Wallapop.
   - [ ] **Carga** (mientras se cargan los anuncios desde el backend)
   - [ ] **Éxito** (cuando se han recuperado los anuncios y están listos para ser mostrados)
 - [x] Al pulsar sobre un anuncio iremos a la [pantalla detalle del anuncio](#pantalla-detalle-del-anuncio)
-- [ ] **Si el usuario está logado**, hay que mostrarle un botón que le permita ecceder a la pantalla de [creación de un anuncio](#página-de-creación-de-anuncio)
+- [ ] **Si el usuario está logado**, hay que mostrarle un botón que le permita acceder a la pantalla de [creación de un anuncio](#página-de-creación-de-anuncio)
 
 ### Pantalla detalle del anuncio
 
