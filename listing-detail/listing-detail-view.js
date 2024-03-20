@@ -1,8 +1,12 @@
 export function buildListingDetail(listing) {
   let tagsHTML = "";
-  listing.tags.forEach((tag) => {
-    tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
-  });
+  if (listing.tags) {
+    tagsHTML += `<ul class="tags">`;
+    listing.tags.forEach((tag) => {
+      tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
+    });
+    tagsHTML += `</ul>`;
+  }
   return `
     <article class="producto">
         <span class="producto__precio">${listing.price}€</span>
@@ -14,7 +18,7 @@ export function buildListingDetail(listing) {
             <div class="producto__foto"><img src="${listing.photo}" alt="Imagen de ${listing.name}"></div>
             <div class="producto__descripcion">
                 <div class="texto">${listing.description}</div>
-                <ul class="tags">${tagsHTML}</ul>
+                ${tagsHTML}
             </div>
         </div>
     </article>

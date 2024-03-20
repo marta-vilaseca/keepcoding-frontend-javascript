@@ -5,7 +5,7 @@
       "name": "Smartphone X",
       "sale": true,
       "price": 500,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/01_phone.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/00.jpg",
       "tags": ["mobile", "lifestyle", "electronics"],
       "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
@@ -14,7 +14,7 @@
       "name": "Laptop Gaming",
       "sale": true,
       "price": 1300,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/02_laptop.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/01.jpg",
       "tags": ["work", "lifestyle", "electronics"],
       "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
     },
@@ -23,7 +23,7 @@
       "name": "Tocadiscos Vintage",
       "sale": true,
       "price": 150,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/03_recordplayer.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/02.jpg",
       "tags": ["lifestyle", "collectibles", "home"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
     },
@@ -32,7 +32,7 @@
       "name": "Bicicleta de Montaña",
       "sale": true,
       "price": 550,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/04_mountainbike.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/03.jpg",
       "tags": ["motor", "lifestyle", "outdoors"],
       "description": "Phasellus vestibulum justo non purus posuere, vel commodo libero volutpat. Integer tincidunt libero vitae diam ullamcorper, ut luctus dui tincidunt. Fusce tristique lectus nec risus efficitur, sit amet lacinia elit luctus. Suspendisse vel sapien eu urna tempor iaculis. Maecenas aliquam, urna ut efficitur lobortis, elit lacus elementum orci, a bibendum odio nulla id mauris. Sed eu nunc ut dolor fermentum fermentum nec eu nisl."
     },
@@ -41,7 +41,7 @@
       "name": "Silla de Oficina de Cuero",
       "sale": true,
       "price": 225,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/05_chair.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/04.jpg",
       "tags": ["work", "lifestyle", "home"],
       "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
@@ -50,7 +50,7 @@
       "name": "Cámara Digital",
       "sale": true,
       "price": 300,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/06_digitalcamera.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/05.jpg",
       "tags": ["work", "lifestyle", "electronics"],
       "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
     },
@@ -59,7 +59,7 @@
       "name": "Consola Nintendo NES",
       "sale": false,
       "price": 200,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/07_nintendo.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/06.jpg",
       "tags": ["lifestyle", "electronics", "games"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
     },
@@ -68,7 +68,7 @@
       "name": "Escritorio de Oficina",
       "sale": true,
       "price": 80,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/08_desk.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/07.jpg",
       "tags": ["work", "lifestyle", "home"],
       "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
     },
@@ -77,7 +77,7 @@
       "name": "Ordenador Vintage Amstrad",
       "sale": true,
       "price": 300,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/09_amstrad.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/08.jpg",
       "tags": ["lifestyle", "collectibles", "electronics", "games"],
       "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
     },
@@ -86,7 +86,7 @@
       "name": "Patinete Eléctrico",
       "sale": false,
       "price": 300,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/10_scooter.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/09.jpg",
       "tags": ["motor", "lifestyle", "outdoors"],
       "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
@@ -95,7 +95,7 @@
       "name": "Cafetera espresso",
       "sale": true,
       "price": 350,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/11_espresso.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/10.jpg",
       "tags": ["work", "lifestyle", "home"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
     },
@@ -104,7 +104,7 @@
       "name": "Chevrolet Impala",
       "sale": true,
       "price": 25000,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/12_chevrolet.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/11.jpg",
       "tags": ["motor", "lifestyle", "collectibles"],
       "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
     },
@@ -113,7 +113,7 @@
       "name": "Cámara DSLR Canon EOS",
       "sale": false,
       "price": 500,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/13_dslrcamera.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/12.jpg",
       "tags": ["work", "lifestyle", "electronics"],
       "description": "Phasellus vestibulum justo non purus posuere, vel commodo libero volutpat. Integer tincidunt libero vitae diam ullamcorper, ut luctus dui tincidunt. Fusce tristique lectus nec risus efficitur, sit amet lacinia elit luctus. Suspendisse vel sapien eu urna tempor iaculis. Maecenas aliquam, urna ut efficitur lobortis, elit lacus elementum orci, a bibendum odio nulla id mauris. Sed eu nunc ut dolor fermentum fermentum nec eu nisl."
     },
@@ -122,7 +122,7 @@
       "name": "Smartwatch",
       "sale": true,
       "price": 65,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/14_smartwatch.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/13.jpg",
       "tags": ["mobile", "lifestyle", "electronics", "fashion"],
       "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
     },
@@ -131,7 +131,7 @@
       "name": "Proyector",
       "sale": false,
       "price": 450,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/15_projector.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/14.jpg",
       "tags": ["lifestyle", "electronics"],
       "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
@@ -140,7 +140,7 @@
       "name": "Vinilos Vintage (surtido)",
       "sale": true,
       "price": 200,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/16_vynils.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/15.jpg",
       "tags": ["lifestyle", "collectibles", "home"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
     },
@@ -149,7 +149,7 @@
       "name": "Guitarra Eléctrica",
       "sale": true,
       "price": 300,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/17_guitar.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/16.jpg",
       "tags": ["lifestyle"],
       "description": "Phasellus vestibulum justo non purus posuere, vel commodo libero volutpat. Integer tincidunt libero vitae diam ullamcorper, ut luctus dui tincidunt. Fusce tristique lectus nec risus efficitur, sit amet lacinia elit luctus. Suspendisse vel sapien eu urna tempor iaculis. Maecenas aliquam, urna ut efficitur lobortis, elit lacus elementum orci, a bibendum odio nulla id mauris. Sed eu nunc ut dolor fermentum fermentum nec eu nisl."
     },
@@ -158,7 +158,7 @@
       "name": "Tableta de Dibujo",
       "sale": true,
       "price": 120,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/18_tablet.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/17.jpg",
       "tags": ["work", "lifestyle", "electronics"],
       "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
     },
@@ -167,7 +167,7 @@
       "name": "Batidora - Amasadora",
       "sale": false,
       "price": 150,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/19_mixer.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/18.jpg",
       "tags": ["lifestyle", "home"],
       "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
@@ -176,9 +176,18 @@
       "name": "Teclado mecánico",
       "sale": true,
       "price": 80,
-      "photo": "https://raw.githubusercontent.com/marta-vilaseca/keepcoding-intro-node-pra/main/public/images/20_keyboard.jpg",
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/19.jpg",
       "tags": ["work", "lifestyle", "electronics"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 20,
+      "name": "Auriculares Inalámbricos",
+      "sale": true,
+      "price": 80,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/20.jpg",
+      "tags": ["electronics", "mobile", "lifestyle"],
+      "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
     }
   ],
   "users": []

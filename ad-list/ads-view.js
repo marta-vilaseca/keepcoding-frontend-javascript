@@ -1,8 +1,13 @@
 export function buildAd(ad) {
   let tagsHTML = "";
-  ad.tags.forEach((tag) => {
-    tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
-  });
+  if (ad.tags) {
+    tagsHTML += `<ul class="tags">`;
+    ad.tags.forEach((tag) => {
+      tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
+    });
+    tagsHTML += `</ul>`;
+  }
+
   return `
         <span class="producto__precio">${ad.price}€</span>
         <div class="producto__info">
@@ -12,7 +17,7 @@ export function buildAd(ad) {
         <div class="producto__foto">
             <a href="listing-detail.html?id=${ad.id}"><img src="${ad.photo}" alt="Imagen de ${ad.name}"></a>
         </div>
-        <ul class="tags">${tagsHTML}</ul>
+        ${tagsHTML}
     `;
 }
 

@@ -1,5 +1,6 @@
-import { getListingDetail } from "./listing-detail-model.js";
+import { getListingDetail, deleteListing } from "./listing-detail-model.js";
 import { buildListingDetail } from "./listing-detail-view.js";
+import { getUserDetails } from "../utils/getUserDetails.js";
 
 export async function listingDetailController(listingDetail) {
   const params = new URLSearchParams(window.location.search);
@@ -12,10 +13,53 @@ export async function listingDetailController(listingDetail) {
 
   try {
     const listing = await getListingDetail(listingId);
+    handleRemoveListingButton(listingDetail, listing);
     const container = listingDetail.querySelector(".container");
     container.innerHTML = buildListingDetail(listing);
   } catch (error) {
     alert(error);
+  }
+
+  async function handleRemoveListingButton(listingDetail, listing) {
+    const token = localStorage.getItem("token");
+    // try {
+    //   const userData = await getUserDetails(token);
+    //   console.log(`listing.userId -> ${listing.userId}`);
+    //   console.log(`userData.id -> ${userData.id}`);
+    //   if (listing.userId === userData.id) {
+    //     const removeListingButton = listingDetail.querySelector("#removeAdButton");
+    //     removeListingButton.removeAttribute("disabled");
+    //     removeListingButton.addEventListener("click", () => {
+    //       removeListing(listing.id, token);
+    //     });
+    //   }
+    // } catch (error) {
+    //   console.error("No se ha podido cargar la info de usuario:", error);
+    // }
+    const userData = await getUserDetails(token);
+    console.log(`listing.userId -> ${listing.userId}`);
+    console.log(`userData.id -> ${userData.id}`);
+
+    if (listing.userId === userData.id) {
+      const removeListingButton = listingDetail.querySelector("#removeAdButton");
+      removeListingButton.removeAttribute("disabled");
+      removeListingButton.addEventListener("click", () => {
+        removeListing(listing.id, token);
+      });
+    }
+  }
+
+  async function removeListing(listingId, token) {
+    if (window.confirm("Seguro que quieres borrar el anuncio?")) {
+      try {
+        await deleteListing(listingId, token);
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 2000);
+      } catch (error) {
+        alert(error);
+      }
+    }
   }
 
   function goBackButton(listingDetail) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSPop - Crear anuncio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="notification/style.css" />
+  </head>
+  <body class="form__page create__page">
+    <header>
+      <h1><a href="/">JSpop</a></h1>
+    </header>
+    <main>
+      <section class="formulario">
+        <h2>Creación de anuncio nuevo</h2>
+        <section id="notifications" class="notification-list"></section>
+        <form id="listing-creation-form">
+          <section id="loader"></section>
+          <p>
+            <label class="form__label" for="title">Nombre <em>*</em></label>
+            <input class="form__inputfield" type="text" id="title" name="title" required />
+          </p>
+          <p>
+            <label class="form__label" for="description">Descripción <em>*</em></label>
+            <textarea class="form__textareafield" id="description" name="description" required></textarea>
+          </p>
+          <p>
+            <label class="form__label" for="price">Precio <em>*</em></label>
+            <input class="form__inputfield" type="text" id="price" name="price" required />
+          </p>
+          <fieldset class="form__options">
+            <span class="form__label">Tipo de anuncio <em>*</em></span>
+            <span class="options">
+              <input type="radio" id="venta" name="sale" value="venta" />
+              <label for="venta">Venta</label>
+              <input type="radio" id="compra" name="sale" value="compra" />
+              <label for="compra">Compra</label>
+            </span>
+          </fieldset>
+          <p>
+            <label class="form__label" for="photo">Foto </label>
+            <input class="form__inputfield" type="text" id="photo" name="photo" />
+          </p>
+          <p>
+            <label class="form__label" for="tags">Tags (separados por comas)</label>
+            <input class="form__inputfield" type="text" id="tags" name="tags" />
+          </p>
+          <button class="form__button" type="submit">Crear anuncio</button>
+          <p class="form__footnote"><em>*</em> campos obligatorios</p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="listing-create.js"></script>
+  </body>
+</html>

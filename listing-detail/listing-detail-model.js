@@ -7,6 +7,7 @@ function parseListing(listing) {
     photo: listing.photo,
     tags: listing.tags,
     description: listing.description,
+    userId: listing.userId,
   };
 }
 
@@ -20,5 +21,24 @@ export async function getListingDetail(id) {
     return listing;
   } catch (error) {
     throw new Error("Error obteniendo el anuncio");
+  }
+}
+
+export async function deleteListing(id, token) {
+  const url = `http://localhost:8000/api/listings/${id}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    if (!response.ok) {
+      const data = await response.json();
+      throw new Error(data.message);
+    }
+  } catch (error) {
+    throw new Error("Error borrando anuncio");
   }
 }

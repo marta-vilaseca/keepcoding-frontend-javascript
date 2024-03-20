@@ -13,9 +13,8 @@ export async function adsListController(adsList) {
       renderEmptyAdsList(adsList);
     }
   } catch (errorMessage) {
-    // dispatchErrorEvent(errorMessage, adsList)
     dispatchEvent(
-      "error-loading-adss",
+      "error-loading-ads",
       {
         message: errorMessage,
         type: "error",

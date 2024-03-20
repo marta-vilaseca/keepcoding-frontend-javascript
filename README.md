@@ -48,18 +48,18 @@ Desarrollo de una aplicación web similar a Wallapop.
 
 ### Página de creación de anuncio
 
-- [ ] Deberá tener un formulario con los siguientes campos:
-  - [ ] **Foto** _(opcional)_
-  - [ ] **Nombre** _(obligatorio)_
-  - [ ] **Descripción** _(obligatorio)_
-  - [ ] **Precio** _(obligatorio)_
-  - [ ] **Compra/venta** _(obligatorio)_
-- [ ] Cuando el usuario envíe el formulario éste envía una **petición al backend para guardar el anuncio**
+- [x] Deberá tener un formulario con los siguientes campos:
+  - [x] **Foto** _(opcional)_
+  - [x] **Nombre** _(obligatorio)_
+  - [x] **Descripción** _(obligatorio)_
+  - [x] **Precio** _(obligatorio)_
+  - [x] **Compra/venta** _(obligatorio)_
+- [x] Cuando el usuario envíe el formulario éste envía una **petición al backend para guardar el anuncio**
 - [ ] Debemos **gestionar todos los estados de interfaz correctamente**:
   - [ ] **Error** (cuando se produce un error al guardar la info del anuncio)
   - [ ] **Carga** (mientras se guarda la info del anuncio en el backend)
   - [ ] **Éxito** (cuando se ha guardado la info del anuncio correctamente)
-- [ ] A esta pantalla el usuario **sólo podrá acceder si está logado**
+- [x] A esta pantalla el usuario **sólo podrá acceder si está logado**
   - [ ] En caso contrario, **hay que redireccionarlo a la página de listado de anuncios explicando por qué**
 
 ### Login

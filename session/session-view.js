@@ -10,6 +10,6 @@ export const buildAuthenticatedSession = (userDetails) => {
   return `<ul>
     <li>Hola, <strong>${userDetails.username}</strong>!</li>
     <li><button>Cerrar sesión</button></li>
-    <li><a href="./create-listing.html">Crear anuncio</a></li>
+    <li><a href="./listing-create.html">Crear anuncio</a></li>
   </ul>`;
 };
