@@ -20,25 +20,16 @@ export async function listingDetailController(listingDetail) {
     alert(error);
   }
 
+  function goBackButton(listingDetail) {
+    const backButton = listingDetail.querySelector("#goBack");
+    backButton.addEventListener("click", () => {
+      window.history.back();
+    });
+  }
+
   async function handleRemoveListingButton(listingDetail, listing) {
     const token = localStorage.getItem("token");
-    // try {
-    //   const userData = await getUserDetails(token);
-    //   console.log(`listing.userId -> ${listing.userId}`);
-    //   console.log(`userData.id -> ${userData.id}`);
-    //   if (listing.userId === userData.id) {
-    //     const removeListingButton = listingDetail.querySelector("#removeAdButton");
-    //     removeListingButton.removeAttribute("disabled");
-    //     removeListingButton.addEventListener("click", () => {
-    //       removeListing(listing.id, token);
-    //     });
-    //   }
-    // } catch (error) {
-    //   console.error("No se ha podido cargar la info de usuario:", error);
-    // }
     const userData = await getUserDetails(token);
-    console.log(`listing.userId -> ${listing.userId}`);
-    console.log(`userData.id -> ${userData.id}`);
 
     if (listing.userId === userData.id) {
       const removeListingButton = listingDetail.querySelector("#removeAdButton");
@@ -60,12 +51,5 @@ export async function listingDetailController(listingDetail) {
         alert(error);
       }
     }
-  }
-
-  function goBackButton(listingDetail) {
-    const backButton = listingDetail.querySelector("#goBack");
-    backButton.addEventListener("click", () => {
-      window.history.back();
-    });
   }
 }
