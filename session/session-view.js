@@ -6,9 +6,10 @@ export const buildSession = () => {
 };
 
 export const buildAuthenticatedSession = (userDetails) => {
-  console.log(userDetails);
+  let userGreeting = "";
+  if (userDetails.username) userGreeting = `<li>Hola, <strong>${userDetails.username}</strong>!</li>`;
   return `<ul>
-    <li>Hola, <strong>${userDetails.username}</strong>!</li>
+    ${userGreeting}
     <li><button>Cerrar sesión</button></li>
     <li><a href="./listing-create.html">Crear anuncio</a></li>
   </ul>`;
