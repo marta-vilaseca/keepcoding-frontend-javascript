@@ -2,13 +2,19 @@ import { notificationController } from "./notification/notification-controller.j
 import { registerController } from "./register/register-controller.js";
 
 const registerForm = document.querySelector("#register-form");
-const notifications = document.querySelector("#notifications");
+const notificationList = document.querySelector(".notification-list");
 
-const { showNotification } = notificationController(notifications);
+const { showNotification } = notificationController(notificationList);
 
 registerForm.addEventListener("register-notification", (event) => {
   event.stopPropagation();
   showNotification(event.detail.message, event.detail.type);
 });
 
-registerController(registerForm);
+document.addEventListener("DOMContentLoaded", () => {
+  registerController(registerForm);
+});
+
+window.addEventListener("offline", () => {
+  showNotification("Has perdido la conexión!", "error");
+});

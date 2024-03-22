@@ -13,7 +13,10 @@ adsList.addEventListener("error-loading-ads", (event) => {
   showNotification(event.detail.message, event.detail.type);
   event.stopPropagation();
 });
-adsListController(adsList);
+
+document.addEventListener("DOMContentLoaded", () => {
+  adsListController(adsList);
+});
 
 window.addEventListener("offline", () => {
   showNotification("Has perdido la conexión!", "error");

@@ -7,7 +7,7 @@ export const buildSession = () => {
 
 export const buildAuthenticatedSession = (userDetails) => {
   let userGreeting = "";
-  if (userDetails.username) userGreeting = `<li>Hola, <strong>${userDetails.username}</strong>!</li>`;
+  if (userDetails.username) userGreeting = `<li class="user-greeting">Hola, <strong>${userDetails.username}</strong>!</li>`;
   return `<ul>
     ${userGreeting}
     <li><button>Cerrar sesión</button></li>

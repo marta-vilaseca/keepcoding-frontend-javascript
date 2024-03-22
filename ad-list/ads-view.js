@@ -1,7 +1,7 @@
 export function buildAd(ad) {
   let tagsHTML = "";
   if (ad.tags) {
-    tagsHTML += `<ul class="tags">`;
+    tagsHTML += `<ul class="producto__tags">`;
     ad.tags.forEach((tag) => {
       tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
     });
@@ -22,5 +22,5 @@ export function buildAd(ad) {
 }
 
 export function buildEmptyAdsList() {
-  return "<h3>Lo sentimos, no hay anuncios disponibles</h3>";
+  return `<h3 class="empty">Lo sentimos, no hay anuncios disponibles</h3>`;
 }

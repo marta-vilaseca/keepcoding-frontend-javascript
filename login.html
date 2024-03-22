@@ -9,17 +9,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="notification/style.css" />
+    <link rel="stylesheet" href="loader/style.css" />
   </head>
   <body class="form__page">
     <header>
       <h1><a href="/">JSpop</a></h1>
     </header>
     <main>
+      <section class="notification-list"></section>
       <section class="formulario">
         <h2>Usuarios Registrados: Log In</h2>
-        <section id="notifications" class="notification-list"></section>
         <form id="login-form">
-          <section id="loader"></section>
+          <div id="loader" class="hidden"><div class="loader"></div></div>
           <p>
             <label class="form__label" for="email">Email</label>
             <input class="form__inputfield" type="email" id="email" name="email" required />

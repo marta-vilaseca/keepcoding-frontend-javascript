@@ -3,8 +3,8 @@ import { dispatchEvent } from "../utils/dispatchEvent.js";
 import { createUser } from "./register-model.js";
 
 export function registerController(registerForm) {
-  const spinner = registerForm.querySelector("#loader");
-  const { showLoader, hideLoader } = loaderController(spinner);
+  const spinner = document.querySelector("#loader");
+  // const { showLoader, hideLoader } = loaderController(spinner);
 
   registerForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -61,8 +61,10 @@ export function registerController(registerForm) {
     const password = registerForm.querySelector("#password");
 
     try {
-      showLoader();
+      // showLoader();
+      spinner.classList.toggle("hidden");
       await createUser(email.value, password.value);
+
       dispatchEvent(
         "register-notification",
         {
@@ -85,7 +87,8 @@ export function registerController(registerForm) {
         registerForm
       );
     } finally {
-      hideLoader();
+      // hideLoader();
+      spinner.classList.toggle("hidden");
     }
   }
 }

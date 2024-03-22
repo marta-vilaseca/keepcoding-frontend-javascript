@@ -3,7 +3,8 @@ import { getAds } from "./ads-model.js";
 import { buildAd, buildEmptyAdsList } from "./ads-view.js";
 
 export async function adsListController(adsList) {
-  const spinner = adsList.querySelector(".lds-ring");
+  const spinner = document.querySelector("#loader");
+
   try {
     spinner.classList.toggle("hidden");
     const ads = await getAds();

@@ -1,7 +1,7 @@
 export function buildListingDetail(listing) {
   let tagsHTML = "";
   if (listing.tags) {
-    tagsHTML += `<ul class="tags">`;
+    tagsHTML += `<ul class="producto__tags">`;
     listing.tags.forEach((tag) => {
       tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
     });
@@ -21,6 +21,14 @@ export function buildListingDetail(listing) {
                 ${tagsHTML}
             </div>
         </div>
+    </article>
+    `;
+}
+
+export function buildEmptyListing() {
+  return `
+    <article class="producto">
+        <h3 class="empty">Lo sentimos, parece que ese anuncio no existe</h3>
     </article>
     `;
 }

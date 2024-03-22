@@ -1,6 +1,9 @@
+import { dispatchEvent } from "../utils/dispatchEvent.js";
 import { createListing } from "./listing-creation-model.js";
 
 export function listingCreationController(listingCreation) {
+  const spinner = document.querySelector("#loader");
+
   listingCreation.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -21,12 +24,30 @@ export function listingCreationController(listingCreation) {
     if (tags) tags = tags.split(",").map((name) => name.trim());
 
     try {
+      spinner.classList.toggle("hidden");
       await createListing(name, price, description, sale, photo, tags);
+      dispatchEvent(
+        "listing-created-notification",
+        {
+          message: "Se ha guardado con éxito",
+          type: "success",
+        },
+        listingCreation
+      );
       setTimeout(() => {
         window.location = "index.html";
       }, 2000);
-    } catch (error) {
-      alert(error);
+    } catch (errorMessage) {
+      dispatchEvent(
+        "error-saving-listing",
+        {
+          message: errorMessage,
+          type: "error",
+        },
+        listingCreation
+      );
+    } finally {
+      spinner.classList.toggle("hidden");
     }
   });
 }

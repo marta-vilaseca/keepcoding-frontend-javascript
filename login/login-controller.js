@@ -3,8 +3,8 @@ import { dispatchEvent } from "../utils/dispatchEvent.js";
 import { loginUser } from "./login-model.js";
 
 export const loginController = (loginForm) => {
-  const spinner = loginForm.querySelector("#loader");
-  const { showLoader, hideLoader } = loaderController(spinner);
+  const spinner = document.querySelector("#loader");
+  // const { showLoader, hideLoader } = loaderController(spinner);
 
   loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -14,7 +14,8 @@ export const loginController = (loginForm) => {
   async function submitLogin(loginForm) {
     const { email, password } = getLoginData(loginForm);
     try {
-      showLoader();
+      // showLoader();
+      spinner.classList.toggle("hidden");
       const jwt = await loginUser(email, password);
 
       dispatchEvent(
@@ -39,7 +40,8 @@ export const loginController = (loginForm) => {
         loginForm
       );
     } finally {
-      hideLoader();
+      // hideLoader();
+      spinner.classList.toggle("hidden");
     }
   }
 

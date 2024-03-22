@@ -9,17 +9,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="notification/style.css" />
+    <link rel="stylesheet" href="loader/style.css" />
   </head>
   <body class="form__page create__page">
     <header>
       <h1><a href="/">JSpop</a></h1>
+      <nav id="session"></nav>
     </header>
+
     <main>
       <section class="formulario">
         <h2>Creación de anuncio nuevo</h2>
-        <section id="notifications" class="notification-list"></section>
+        <section class="notification-list"></section>
         <form id="listing-creation-form">
-          <section id="loader"></section>
+          <div id="loader" class="hidden"><div class="loader"></div></div>
           <p>
             <label class="form__label" for="title">Nombre <em>*</em></label>
             <input class="form__inputfield" type="text" id="title" name="title" required />
