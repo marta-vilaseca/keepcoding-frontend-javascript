@@ -90,7 +90,7 @@ Desarrollo de una aplicación web similar a Wallapop.
 - [ ] Gestionar la **paginación** (por defecto el API sólo devuelve 10 elementos)
 - [ ] Implementar un **buscador** de anuncios en el listado
 - [ ] Permitir **edición de anuncio**, si el usuario autenticado es el propietario del mismo
-- [ ] Permitir **filtrado de los anuncios usando tags**
+- [x] Permitir **filtrado de los anuncios usando tags**
   - [x] Para ello en el formulario de anuncios deberán poder **incluirse tags**
   - [x] Inicialmente estos tags serían estáticos
 - [x] O podemos hacer **que los tags sean dinámicos**

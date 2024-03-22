@@ -187,6 +187,16 @@ nav a:active {
 
 /* PRODUCTOS
 --------------------------- */
+.productos__header {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: center;
+}
+
+.productos__header em {
+  color: #333;
+  font-style: normal;
+}
 
 .productos {
   display: grid;
@@ -396,9 +406,6 @@ nav a:active {
   display: flex;
   flex-direction: column-reverse;
   gap: 2rem;
-}
-
-.individual .producto {
 }
 
 /* FORMULARIOS

@@ -24,3 +24,18 @@ export async function getAds() {
 
   return ads;
 }
+
+export async function getAdsByTag(tag) {
+  const url = `http://localhost:8000/api/listings?tags_like=${tag}`;
+  let filteredAds = [];
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    filteredAds = parseAds(data);
+  } catch (error) {
+    throw new Error("Error obteniendo anuncios");
+  }
+
+  return filteredAds;
+}

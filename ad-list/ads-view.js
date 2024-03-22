@@ -3,7 +3,7 @@ export function buildAd(ad) {
   if (ad.tags) {
     tagsHTML += `<ul class="producto__tags">`;
     ad.tags.forEach((tag) => {
-      tagsHTML += `<li class="tag"><a href="/?tags=${tag}">${tag}</a></li>`;
+      tagsHTML += `<li class="tag"><a href="/?tags_like=${tag}">${tag}</a></li>`;
     });
     tagsHTML += `</ul>`;
   }

@@ -1,16 +1,26 @@
 import { dispatchEvent } from "../utils/dispatchEvent.js";
-import { getAds } from "./ads-model.js";
+import { getAds, getAdsByTag } from "./ads-model.js";
 import { buildAd, buildEmptyAdsList } from "./ads-view.js";
 
 export async function adsListController(adsList) {
+  const params = new URLSearchParams(window.location.search);
+  const tagFilter = params.get("tags_like");
   const spinner = document.querySelector("#loader");
 
   try {
     spinner.classList.toggle("hidden");
-    const ads = await getAds();
-    if (ads.length > 0) {
-      renderAds(ads, adsList);
+    adsList.innerHTML = "";
+
+    let ads;
+    if (tagFilter) {
+      ads = await getAdsByTag(tagFilter);
+      renderAds(ads, adsList, tagFilter);
     } else {
+      ads = await getAds();
+      renderAds(ads, adsList);
+    }
+
+    if (ads.length === 0) {
       renderEmptyAdsList(adsList);
     }
   } catch (errorMessage) {
@@ -27,7 +37,14 @@ export async function adsListController(adsList) {
   }
 }
 
-function renderAds(ads, adsList) {
+function renderAds(ads, adsList, tag) {
+  if (tag) {
+    const title = document.createElement("h2");
+    title.classList.add("productos__header");
+    title.innerHTML = `Anuncios con la etiqueta <em>"${tag}"</em>`;
+    adsList.appendChild(title);
+  }
+
   ads.forEach((ad) => {
     const adItem = document.createElement("article");
     adItem.classList.add("producto");

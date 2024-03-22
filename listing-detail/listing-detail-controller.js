@@ -49,7 +49,7 @@ export async function listingDetailController(listingDetail) {
     const token = localStorage.getItem("token");
     const userData = await getUserDetails(token);
 
-    if (listing.userId === userData.id) {
+    if (token && listing.userId === userData.id) {
       const removeListingButton = listingDetail.querySelector("#removeAdButton");
       removeListingButton.removeAttribute("disabled");
       removeListingButton.addEventListener("click", () => {
