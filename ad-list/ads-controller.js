@@ -1,10 +1,11 @@
 import { dispatchEvent } from "../utils/dispatchEvent.js";
-import { getAds, getAdsByTag } from "./ads-model.js";
+import { getAds, getAdsByTag, getAdsByName } from "./ads-model.js";
 import { buildAd, buildEmptyAdsList } from "./ads-view.js";
 
 export async function adsListController(adsList) {
   const params = new URLSearchParams(window.location.search);
   const tagFilter = params.get("tags_like");
+  const nameFilter = params.get("name_like");
   const spinner = document.querySelector("#loader");
 
   try {
@@ -14,7 +15,10 @@ export async function adsListController(adsList) {
     let ads;
     if (tagFilter) {
       ads = await getAdsByTag(tagFilter);
-      renderAds(ads, adsList, tagFilter);
+      renderAds(ads, adsList, `Anuncios con la etiqueta "${tagFilter}"`);
+    } else if (nameFilter) {
+      ads = await getAdsByName(nameFilter);
+      renderAds(ads, adsList, `Resultados para la búsqueda "${nameFilter}"`);
     } else {
       ads = await getAds();
       renderAds(ads, adsList);
@@ -37,12 +41,12 @@ export async function adsListController(adsList) {
   }
 }
 
-function renderAds(ads, adsList, tag) {
-  if (tag) {
-    const title = document.createElement("h2");
-    title.classList.add("productos__header");
-    title.innerHTML = `Anuncios con la etiqueta <em>"${tag}"</em>`;
-    adsList.appendChild(title);
+function renderAds(ads, adsList, title) {
+  if (title) {
+    const header = document.createElement("h2");
+    header.classList.add("productos__header");
+    header.innerHTML = title;
+    adsList.appendChild(header);
   }
 
   ads.forEach((ad) => {

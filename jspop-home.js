@@ -4,6 +4,7 @@ import { sessionController } from "./session/session-controller.js";
 
 const notificationList = document.querySelector(".notification-list");
 const adsList = document.querySelector(".productos");
+const searchForm = document.getElementById("searchForm");
 const session = document.querySelector("#session");
 
 sessionController(session);
@@ -15,6 +16,15 @@ adsList.addEventListener("error-loading-ads", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  searchForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const searchInput = document.getElementById("search-input").value;
+    const searchParam = searchInput.trim();
+
+    if (searchParam) {
+      window.location.href = `?name_like=${searchParam}`;
+    }
+  });
   adsListController(adsList);
 });
 

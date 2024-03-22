@@ -22,5 +22,5 @@ export function buildAd(ad) {
 }
 
 export function buildEmptyAdsList() {
-  return `<h3 class="empty">Lo sentimos, no hay anuncios disponibles</h3>`;
+  return `<h3 class="empty">Lo sentimos, no se han encontrado anuncios</h3>`;
 }
