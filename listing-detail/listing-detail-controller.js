@@ -1,4 +1,5 @@
 import { dispatchEvent } from "../utils/dispatchEvent.js";
+import { loaderController } from "../loader/loader-controller.js";
 import { getListingDetail, deleteListing } from "./listing-detail-model.js";
 import { buildListingDetail, buildEmptyListing } from "./listing-detail-view.js";
 import { getUserDetails } from "../utils/getUserDetails.js";
@@ -7,6 +8,7 @@ export async function listingDetailController(listingDetail) {
   const params = new URLSearchParams(window.location.search);
   const listingId = params.get("id");
   const spinner = document.querySelector("#loader");
+  const { showLoader, hideLoader } = loaderController(spinner);
 
   if (!listingId) {
     window.location.href = "./index.html";
@@ -15,7 +17,7 @@ export async function listingDetailController(listingDetail) {
   goBackButton(listingDetail);
 
   try {
-    spinner.classList.toggle("hidden");
+    showLoader();
     const listing = await getListingDetail(listingId);
     const container = listingDetail.querySelector(".container");
     handleRemoveListingButton(listingDetail, listing);
@@ -35,7 +37,7 @@ export async function listingDetailController(listingDetail) {
       listingDetail
     );
   } finally {
-    spinner.classList.toggle("hidden");
+    hideLoader();
   }
 
   function goBackButton(listingDetail) {
@@ -61,10 +63,10 @@ export async function listingDetailController(listingDetail) {
   async function removeListing(listingId, token) {
     if (window.confirm("Seguro que quieres borrar el anuncio?")) {
       try {
-        spinner.classList.toggle("hidden");
+        showLoader();
         await deleteListing(listingId, token);
         dispatchEvent(
-          "listing-deleted-notification",
+          "delete-listing-notification",
           {
             message: "Se ha eliminado con éxito",
             type: "success",
@@ -76,7 +78,7 @@ export async function listingDetailController(listingDetail) {
         }, 2000);
       } catch (errorMessage) {
         dispatchEvent(
-          "error-deleting-listing",
+          "delete-listing-notification",
           {
             message: errorMessage,
             type: "error",
@@ -84,7 +86,7 @@ export async function listingDetailController(listingDetail) {
           listingDetail
         );
       } finally {
-        spinner.classList.toggle("hidden");
+        hideLoader();
       }
     }
   }

@@ -14,12 +14,7 @@ listingDetail.addEventListener("error-loading-listing", (event) => {
   event.stopPropagation();
 });
 
-listingDetail.addEventListener("error-deleting-listing", (event) => {
-  showNotification(event.detail.message, event.detail.type);
-  event.stopPropagation();
-});
-
-listingDetail.addEventListener("listing-deleted-notification", (event) => {
+listingDetail.addEventListener("delete-listing-notification", (event) => {
   showNotification(event.detail.message, event.detail.type);
   event.stopPropagation();
 });

@@ -9,12 +9,7 @@ const session = document.querySelector("#session");
 sessionController(session);
 const { showNotification } = notificationController(notificationList);
 
-listingCreation.addEventListener("error-saving-listing", (event) => {
-  showNotification(event.detail.message, event.detail.type);
-  event.stopPropagation();
-});
-
-listingCreation.addEventListener("listing-created-notification", (event) => {
+listingCreation.addEventListener("create-listing-notification", (event) => {
   showNotification(event.detail.message, event.detail.type);
   event.stopPropagation();
 });

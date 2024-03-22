@@ -2,12 +2,12 @@ import { buildLoader } from "./loader-view.js";
 
 export const loaderController = (loader) => {
   const showLoader = () => {
-    loader.classList.add("active");
+    loader.classList.remove("hidden");
     loader.innerHTML = buildLoader();
   };
 
   const hideLoader = () => {
-    loader.classList.remove("active");
+    loader.classList.add("hidden");
     loader.innerHTML = "";
   };
 

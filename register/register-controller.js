@@ -4,7 +4,7 @@ import { createUser } from "./register-model.js";
 
 export function registerController(registerForm) {
   const spinner = document.querySelector("#loader");
-  // const { showLoader, hideLoader } = loaderController(spinner);
+  const { showLoader, hideLoader } = loaderController(spinner);
 
   registerForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -61,8 +61,7 @@ export function registerController(registerForm) {
     const password = registerForm.querySelector("#password");
 
     try {
-      // showLoader();
-      spinner.classList.toggle("hidden");
+      showLoader();
       await createUser(email.value, password.value);
 
       dispatchEvent(
@@ -87,8 +86,7 @@ export function registerController(registerForm) {
         registerForm
       );
     } finally {
-      // hideLoader();
-      spinner.classList.toggle("hidden");
+      hideLoader();
     }
   }
 }

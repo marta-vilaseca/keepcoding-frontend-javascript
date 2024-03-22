@@ -1,8 +1,10 @@
 import { dispatchEvent } from "../utils/dispatchEvent.js";
+import { loaderController } from "../loader/loader-controller.js";
 import { createListing } from "./listing-creation-model.js";
 
 export function listingCreationController(listingCreation) {
   const spinner = document.querySelector("#loader");
+  const { showLoader, hideLoader } = loaderController(spinner);
 
   listingCreation.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -24,10 +26,10 @@ export function listingCreationController(listingCreation) {
     if (tags) tags = tags.split(",").map((name) => name.trim());
 
     try {
-      spinner.classList.toggle("hidden");
+      showLoader();
       await createListing(name, price, description, sale, photo, tags);
       dispatchEvent(
-        "listing-created-notification",
+        "create-listing-notification",
         {
           message: "Se ha guardado con éxito",
           type: "success",
@@ -39,7 +41,7 @@ export function listingCreationController(listingCreation) {
       }, 2000);
     } catch (errorMessage) {
       dispatchEvent(
-        "error-saving-listing",
+        "create-listing-notification",
         {
           message: errorMessage,
           type: "error",
@@ -47,7 +49,7 @@ export function listingCreationController(listingCreation) {
         listingCreation
       );
     } finally {
-      spinner.classList.toggle("hidden");
+      hideLoader();
     }
   });
 }
