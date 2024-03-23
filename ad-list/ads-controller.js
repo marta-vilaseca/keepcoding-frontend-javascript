@@ -46,14 +46,14 @@ export async function adsListController(adsList) {
 function renderAds(ads, adsList, title) {
   if (title) {
     const header = document.createElement("h2");
-    header.classList.add("productos__header");
+    header.classList.add("products__header");
     header.innerHTML = title;
     adsList.appendChild(header);
   }
 
   ads.forEach((ad) => {
     const adItem = document.createElement("article");
-    adItem.classList.add("producto");
+    adItem.classList.add("product");
     adItem.innerHTML = buildAd(ad);
     adsList.appendChild(adItem);
   });

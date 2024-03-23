@@ -93,13 +93,13 @@ Desarrollo de una aplicación web similar a Wallapop.
 - [x] Permitir **filtrado de los anuncios usando tags**
   - [x] Para ello en el formulario de anuncios deberán poder **incluirse tags**
   - [x] Inicialmente estos tags serían estáticos
-- [x] O podemos hacer **que los tags sean dinámicos**
+- [x] O podemos hacer **que los tags sean dinámicos** _(está hecho de una forma muy simple, pero el usuario puede introducir libremente los tags que quiera)_
 
 ## API REST de apoyo
 
 Estaremos utilizando [sparrest.js](https://github.com/kasappeal/sparrest.js), desarrollada por [@kasappeal](https://www.github.com/kasappeal)
 
-Tras clonar el repositorio y estando dentro del directorio del mismo,
+Tras clonar el repositorio de Sparrest y estando dentro del directorio del mismo,
 
 ```sh
 npm install

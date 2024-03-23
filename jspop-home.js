@@ -3,7 +3,7 @@ import { adsListController } from "./ad-list/ads-controller.js";
 import { sessionController } from "./session/session-controller.js";
 
 const notificationList = document.querySelector(".notification-list");
-const adsList = document.querySelector(".productos");
+const adsList = document.querySelector(".products");
 const searchForm = document.getElementById("searchForm");
 const session = document.querySelector("#session");
 

@@ -36,7 +36,7 @@ body.create__page {
   }
 }
 
-.formulario {
+.form {
   margin: 0 auto;
   width: calc(100% - 4rem);
 }
@@ -155,7 +155,7 @@ span.options label[for="venta"] {
 }
 
 @media screen and (min-width: 600px) {
-  .formulario {
+  .form {
     padding-bottom: 3rem;
   }
   .form__button,
