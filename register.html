@@ -7,7 +7,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="notification/style.css" />
     <link rel="stylesheet" href="loader/style.css" />
   </head>
@@ -16,11 +19,11 @@
       <h1><a href="/">JSpop</a></h1>
     </header>
     <main>
-      <section class="notification-list"></section>
       <section class="formulario">
         <h2>Registro de nuevo usuario</h2>
         <form id="register-form">
           <div id="loader" class="hidden"><div class="loader"></div></div>
+          <section class="notification-list"></section>
           <p>
             <label class="form__label" for="email">Email <span>*</span></label>
             <input class="form__inputfield" type="email" id="email" name="email" required />

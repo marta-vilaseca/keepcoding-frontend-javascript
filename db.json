@@ -1,15 +1,6 @@
 {
   "listings": [
     {
-      "id": 0,
-      "name": "Smartphone X",
-      "sale": true,
-      "price": 500,
-      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/00.jpg",
-      "tags": ["mobile", "lifestyle", "electronics"],
-      "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
-    },
-    {
       "id": 1,
       "name": "Laptop Gaming",
       "sale": true,
@@ -47,12 +38,12 @@
     },
     {
       "id": 5,
-      "name": "Cámara Digital",
+      "name": "Smartphone X",
       "sale": true,
-      "price": 300,
-      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/05.jpg",
-      "tags": ["work", "lifestyle", "electronics"],
-      "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
+      "price": 500,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/00.jpg",
+      "tags": ["mobile", "lifestyle", "electronics"],
+      "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
     {
       "id": 6,
@@ -155,12 +146,12 @@
     },
     {
       "id": 17,
-      "name": "Tableta de Dibujo",
+      "name": "Bolso Elegante para Portátil",
       "sale": true,
-      "price": 120,
-      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/17.jpg",
-      "tags": ["work", "lifestyle", "electronics"],
-      "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
+      "price": 50,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/26.jpg",
+      "tags": ["fashion", "work", "lifestyle"],
+      "description": "Duis nec nunc non velit ultricies auctor. Maecenas auctor, justo nec malesuada efficitur, nisi urna bibendum ipsum, non cursus metus arcu vel arcu. Vivamus condimentum congue massa a facilisis. Sed vel sodales odio, in bibendum nisl. Nunc feugiat, risus vitae bibendum sagittis, lacus justo mattis purus, nec ullamcorper elit ligula vel nisl. Nam ullamcorper felis vel justo cursus, eu laoreet augue scelerisque."
     },
     {
       "id": 18,
@@ -188,6 +179,42 @@
       "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/20.jpg",
       "tags": ["electronics", "mobile", "lifestyle"],
       "description": "Vestibulum sed ullamcorper risus. Proin condimentum erat erat, vitae convallis mi vehicula id. Suspendisse sed ultricies metus. Quisque augue nisi, condimentum at sagittis et, dapibus vel dui. Morbi at ante nisl. Nulla sit amet mi metus. Nulla auctor sagittis porttitor. Praesent pellentesque risus est, eget bibendum erat ultricies at. Suspendisse potenti. Nullam eu nisl vel mauris hendrerit elementum ac vel enim. Praesent rhoncus bibendum lectus ac aliquet."
+    },
+    {
+      "id": 21,
+      "name": "Máquina escribir vintage",
+      "sale": true,
+      "price": 80,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/37.jpg",
+      "tags": ["home", "lifestyle", "collectibles"],
+      "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
+    },
+    {
+      "id": 22,
+      "name": "Moto Harley Davidson",
+      "sale": false,
+      "price": 14550,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/39.jpg",
+      "tags": ["motor", "lifestyle"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ac scelerisque facilisis, purus velit facilisis dolor, id gravida quam lectus eu eros. Sed vehicula, odio ac volutpat tristique, nisl ex vestibulum velit, nec posuere dolor metus nec mauris. Fusce efficitur sem non lacus varius, ac dapibus neque tincidunt. Ut eget risus vel velit imperdiet ullamcorper in vel nulla. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 23,
+      "name": "Teléfono vintage",
+      "sale": false,
+      "price": 75,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/28.jpg",
+      "tags": ["home", "collectibles"],
+      "description": "Cras ullamcorper euismod justo, vel feugiat ligula tincidunt eu. Ut hendrerit augue eu nisi vulputate, a ultricies nunc fermentum. Integer ac risus eu urna sagittis feugiat. Sed vitae elit nec sapien luctus imperdiet. Mauris at erat vel ex interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut libero vel libero cursus tincidunt. Suspendisse et eleifend arcu."
+    },
+    {
+      "id": 24,
+      "name": "Volkswagen Beetle",
+      "sale": true,
+      "price": 12700,
+      "photo": "https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/38.jpg",
+      "tags": ["motor", "collectibles", "lifestyle"],
+      "description": "Phasellus vestibulum justo non purus posuere, vel commodo libero volutpat. Integer tincidunt libero vitae diam ullamcorper, ut luctus dui tincidunt. Fusce tristique lectus nec risus efficitur, sit amet lacinia elit luctus. Suspendisse vel sapien eu urna tempor iaculis. Maecenas aliquam, urna ut efficitur lobortis, elit lacus elementum orci, a bibendum odio nulla id mauris. Sed eu nunc ut dolor fermentum fermentum nec eu nisl."
     }
   ],
   "users": []

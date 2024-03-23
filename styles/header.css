@@ -1,0 +1,158 @@
+header {
+  padding: 1rem 0 0 0;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+/* Logo
+-------------------------- */
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 6rem;
+  margin: 3rem auto;
+  background: url("../images/icon.png") center left no-repeat;
+  background-size: 5rem;
+  padding-left: 7rem;
+}
+
+h1 a:link,
+h1 a:visited {
+  color: MediumAquamarine;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #1b8e72;
+  text-decoration: none;
+}
+
+/* Navigation
+-------------------------- */
+header nav {
+  margin: 2rem 0;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.user-greeting {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+nav button,
+nav a:link,
+nav a:visited {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: MediumAquamarine;
+  color: white;
+  text-decoration: none;
+  border: 0;
+  border-radius: 1rem;
+}
+
+nav button:hover,
+nav a:hover,
+nav a:active {
+  background-color: #1b8e72;
+  cursor: pointer;
+}
+
+.user-greeting::before {
+  content: "👥";
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+.create__page nav li {
+  display: none;
+}
+
+.create__page nav li.user-greeting {
+  display: block;
+}
+
+/* Search Form
+-------------------------- */
+#searchForm {
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+}
+
+#searchForm input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: white;
+  border: 2px solid #c1d0cd;
+  border-radius: 1rem 0 0 1rem;
+  width: 80%;
+}
+
+#searchForm input:focus {
+  outline: none;
+  border: 2px solid MediumAquamarine;
+  background-color: #ecfff9;
+}
+
+#searchForm button {
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  background-color: MediumAquamarine;
+  color: white;
+  border: 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#searchForm button:hover {
+  background-color: #1b8e72;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES
+----------------------------------- */
+@media screen and (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #searchForm input {
+    width: 50%;
+  }
+}

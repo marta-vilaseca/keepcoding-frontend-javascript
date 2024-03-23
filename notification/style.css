@@ -8,9 +8,9 @@
 }
 
 .notification.success {
-  border: 2px solid CornflowerBlue;
-  color: CornflowerBlue;
-  background-color: #d8e5f6;
+  border: 2px solid #6ec67a;
+  color: #6ec67a;
+  background-color: #def6e1;
   font-weight: 600;
 }
 

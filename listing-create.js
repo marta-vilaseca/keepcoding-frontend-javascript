@@ -1,12 +1,9 @@
 import { notificationController } from "./notification/notification-controller.js";
 import { listingCreationController } from "./listing-creation/listing-creation-controller.js";
-import { sessionController } from "./session/session-controller.js";
 
 const notificationList = document.querySelector(".notification-list");
 const listingCreation = document.querySelector("#listing-creation-form");
-const session = document.querySelector("#session");
 
-sessionController(session);
 const { showNotification } = notificationController(notificationList);
 
 listingCreation.addEventListener("create-listing-notification", (event) => {

@@ -1,4 +1,5 @@
 import { dispatchEvent } from "../utils/dispatchEvent.js";
+import { loaderController } from "../loader/loader-controller.js";
 import { getAds, getAdsByTag, getAdsByName } from "./ads-model.js";
 import { buildAd, buildEmptyAdsList } from "./ads-view.js";
 
@@ -7,9 +8,10 @@ export async function adsListController(adsList) {
   const tagFilter = params.get("tags_like");
   const nameFilter = params.get("name_like");
   const spinner = document.querySelector("#loader");
+  const { showLoader, hideLoader } = loaderController(spinner);
 
   try {
-    spinner.classList.toggle("hidden");
+    showLoader();
     adsList.innerHTML = "";
 
     let ads;
@@ -37,7 +39,7 @@ export async function adsListController(adsList) {
       adsList
     );
   } finally {
-    spinner.classList.toggle("hidden");
+    hideLoader();
   }
 }
 

@@ -20,7 +20,7 @@ export function listingCreationController(listingCreation) {
     let photo = formData.get("photo");
     let tags = formData.get("tags");
 
-    !photo ? (photo = defaultImageURL) : (photo = `https://res.cloudinary.com/dyj8i0oym/image/upload/v1710867898/jspop/${photo}`);
+    !photo ? (photo = defaultImageURL) : (photo = photo);
     sale === "venta" ? (sale = true) : (sale = false);
 
     if (tags) tags = tags.split(",").map((name) => name.trim());

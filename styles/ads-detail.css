@@ -1,0 +1,254 @@
+/* Buttons
+----------------------- */
+.listing__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.listing__button {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  vertical-align: center;
+  padding: 0 1rem;
+  background-color: snow;
+  text-decoration: none;
+  border: 3px solid;
+  border-radius: 1rem;
+}
+
+.listing__button:enabled:hover {
+  cursor: pointer;
+}
+
+.listing__button::before {
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  margin-right: 1rem;
+}
+
+.back-button {
+  border-color: MediumAquamarine;
+  color: MediumAquamarine;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  &:before {
+    content: "◄";
+    color: MediumAquamarine;
+  }
+
+  &:hover {
+    background-color: #1b8e72;
+    border-color: #1b8e72;
+    color: white;
+  }
+
+  &:hover::before {
+    color: white;
+  }
+}
+
+.delete-button {
+  border-color: #97a7a4;
+  color: #97a7a4;
+
+  &:before {
+    content: "✖";
+    color: #97a7a4;
+  }
+}
+
+.delete-button:enabled {
+  &:hover {
+    background-color: tomato;
+    border-color: tomato;
+    color: white;
+  }
+
+  &:hover::before {
+    color: white;
+  }
+}
+
+.delete-button:disabled {
+  border-color: #97a7a4;
+  color: #97a7a4;
+  opacity: 0.8;
+
+  &:hover {
+    border-color: #97a7a4;
+    color: #97a7a4;
+    background: snow;
+    cursor: default;
+    opacity: 0.8;
+  }
+}
+
+/* Individual listing
+-------------------------- */
+.individual {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.individual nav {
+  margin-bottom: 2rem;
+}
+
+.producto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.producto__precio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  color: #333;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.categoria {
+  display: block;
+  color: #97a7a4;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+}
+
+.producto__info h3 {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.producto__info a:link,
+.producto__info a:visited {
+  text-decoration: none;
+  color: MediumAquamarine;
+}
+
+.producto__info a:hover,
+.producto__info a:active {
+  color: #1b8e72;
+}
+
+.producto__detalles {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+.producto__foto {
+  position: relative;
+}
+
+.producto__foto::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.producto__foto img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.producto__foto a:hover img,
+.producto__foto a:active img {
+  transform: scale(1.02);
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+}
+
+.producto__tags {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag a:link,
+.tag a:visited {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  background-color: #97a7a4;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tag a:hover,
+.tag a:active {
+  background-color: #616f6c;
+  cursor: pointer;
+}
+
+.producto__descripcion {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+/* MEDIA QUERIES
+----------------------------------- */
+@media screen and (min-width: 480px) {
+  .individual {
+    max-width: 500px;
+  }
+  .categoria {
+    margin-top: 0;
+  }
+
+  .producto__info h3 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .producto__precio {
+    right: 50%;
+  }
+  .producto__detalles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .producto__descripcion {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .individual {
+    max-width: 700px;
+  }
+  .tag-list {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .individual {
+    max-width: 1000px;
+  }
+}
